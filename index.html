@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація на навчальний курс</title>
+</head>
+<body>
+    
+    <h1>Реєстрація на начальний курс</h1>
+
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Особисті дані</legend>
+
+            <p>
+                <label for="fullname">Ім'я та прізвище</label><br>
+                <input type="text" id="text" id="fullname" name="fullname" required plfcenolder="Ілля Михайлович"
+            </p>
+
+            <p>
+                <label for="email">Електронна пошта</label><br>
+                <input type="email" id="email" name="email" required="example@gmail.com">
+            </p>
+
+            <p>
+                <label for="phone">Номер телефону:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="+380XXXXXXXX">
+            </p>
+            
+            <p>
+                <label for="age">Вік</label><br>
+                <input type="number" id="age" name="age" min="14" max="70" required placeholder="14-70">
+            </p>
+
+            <p>
+                <label for="dop">Дата народження</label><br>
+                <input type="date" id="dob" name="dob">
+            </p>
+            <p>
+                <label for="passsword">Пароль</label><br>
+                <input type="password" id="passsword" name="password" minlength="8" required>
+            </p>
+            <p>
+                <label for="confirm_password">Повторіть Пароль</label><br>
+                <input type="password" id="confirm_password" name="confirm_password" minlength="8" required>
+            </p>
+        </fieldset> 
+
+        <fieldset>
+            <legend>Рівень підготовки </legend>
+            <input type="radio" id="level_beginner" name="level" value="beginner" required>
+            <label for="level_beginner"> Початковий</label><br>
+
+            <input type="radio" id="level_intermediate" name="level" value="intermediate">
+            <label for="level_beginner">Середній</label><br>
+
+            <input type="radio" id="level_advanced" name="level" value="advanced">
+            <label for="level_advanced">Високий</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Теми, які вас зацікавлять:</legend>
+            <input type="checkbox" id="topic_html" name="topics[]" value="HTML">
+            <label for="topic_html">HTML</label><br>
+            
+            <input type="checkbox" id="topic_css" name="topics[]" value="CSS">
+            <label for="topics_css">CSS</label><br>
+
+            <input type="checkbox" id="topic_js" name="topics[]" value="JavaSkript">
+            <label for="topic_js">JavaSkript</label><br>
+            
+            <input type="checkbox" id="topic_angular" name="topics[]" value="Angular">
+            <label for="topic_angular">Angular</label>
+        </fieldset>
+
+        <p>
+            <label for="format">Бажаний формат навчання:</label><br>
+            <select id="format" name="format">
+                <option value="online">Онлайн</option>
+                <option value="offline">Очно</option>
+                <option value="blender">Змішаний формат</option>
+            </select> 
+        </p>
+
+        <p>
+            <label for="motivation">Чому ви хочете пройти цей курс?</label><br>
+            <textarea id="motivation" name="motivation" rows="5" cols="40" maxlength="300" placeholder="Максимум 300 символів..."></textarea>
+        </p>
+
+        <p>
+            <button type="submit">Надіслати</button>
+            <button type="reset">Очистити форму</button>
+        </p>
+        
+    </form>
+    
+</body>
+</html>
