@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Курс HTML</title>
+</head>
+<body>
+
+    <header>
+        <h1>Курс HTML для початківців</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="lessons.html">Уроки</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <selection>
+            <h2>Про курс</h2>
+            <img src="students.jpg" alt="Студенти начаються на курсі HTML">
+            <p>На курсі ви навчитеся створювати вебсторінки.</p>
+        </selection>
+
+        <selection>
+            <h2>Реєстрація</h2>
+            <form>
+                <div>
+                    <label for="name">Ім'я</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Зареєструватися</button>
+            </form>
+        </selection>
+    </main>
+    
+</body>
+</html>
+<!--
+Виправлені проблеми:
+1.Додано атрибут lang="uk" до тегу <html> для визначення мови документа
+2.Змінено головний заголовок з <h2> на <h1> а підзаголовки з <h4> на <h2>
+3.Використано теги <header> <nav> <main> <selection>  замість <div>
+4.Посиланням зрозумілий текст уроки контакти замість тут натиснути тут
+5. до атрибуту img додано alt для опису картинки
+6.Поля форми звязано з відповідними тегами label за допомогою  for та id
+7.тип поля Email  змінено з type="text"  на type="email" для зручного введення на мобільних пристроях
+-->
