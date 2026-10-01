@@ -1,0 +1,166 @@
+Body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    color: black;
+}
+
+header {
+    background-color: navy;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+main {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    padding: 15px 20px;
+    border-bottom: 2px solid gray;
+}
+
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.static-box {
+    position: static;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: silver;
+}
+
+.static-test {
+    top: 50px;
+}
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 40px;
+    border: 2px solid blue;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: lightblue;
+}
+
+.products-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    position: relative;
+    width: 260px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: white;
+}
+
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+    color: green;
+    font-size: 1.2em;
+}
+
+.banner {
+    position: relative;
+    width: 500px;
+    margin: 20px 0;
+}
+
+.banner img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+.banner-button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: orange;
+    border: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.help {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.layers {
+    position: relative;
+    height: 200px;
+    background-color: gainsboro;
+    border: 1px dashed gray;
+}
+
+.box1 {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 150px;
+    height: 100px;
+    z-index: 1;
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+}
+
+.box2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    width: 150px;
+    height: 100px;
+    z-index: 2;
+    background-color: dodgerblue;
+    color: white;
+    padding: 10px;
+}
+
+.extra-content {
+    margin-top: 50px;
+    padding-bottom: 300px;
+}

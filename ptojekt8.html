@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Store — Інтернет-магазин</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tech Store</h1>
+    </header>
+
+    <nav class="menu">
+        <a href="#products">Товари</a>
+        <a href="#static">Static</a>
+        <a href="#relative">Relative</a>
+        <a href="#layers">Layers</a>
+    </nav>
+
+    <main>
+        <section class="banner">
+            <img src="https://via.placeholder.com/500x200" alt="Реклама">
+            <button class="banner-button">Детальніше</button>
+        </section>
+
+        <section id="products">
+            <h2>Популярні товари</h2>
+            <div class="products-container">
+                
+                <div class="product">
+                    <span class="discount">-20%</span>
+                    <h2>Ноутбук</h2>
+                    <p>Ноутбук для навчання та роботи.</p>
+                    <p class="price">25 000 грн</p>
+                </div>
+
+                <div class="product">
+                    <span class="discount">-15%</span>
+                    <h2>Смартфон</h2>
+                    <p>Потужний смартфон з якісною камерою.</p>
+                    <p class="price">15 000 грн</p>
+                </div>
+
+                <div class="product">
+                    <span class="discount">-10%</span>
+                    <h2>Навушники</h2>
+                    <p>Бездротові навушники для музики та дзвінків.</p>
+                    <p class="price">3 500 грн</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="static">
+            <h2>Демонстрація position: static</h2>
+            <div class="static-box static-test">Перший блок</div>
+            <div class="static-box">Другий блок</div>
+            <div class="static-box">Третій блок</div>
+        </section>
+
+        <section id="relative">
+            <h2>Демонстрація position: relative</h2>
+            <div class="relative-box">
+                Цей блок зміщений
+            </div>
+        </section>
+
+        <section id="layers-section">
+            <h2>Демонстрація z-index та накладання</h2>
+            <div class="layers">
+                <div class="box1">Блок 1</div>
+                <div class="box2">Блок 2</div>
+            </div>
+        </section>
+
+        <section class="extra-content">
+            <p>Додатковий текст сторінки для створення довжини та перевірки прокручування...</p>
+            <p>Прокрутіть сторінку, щоб перевірити фіксацію меню зверху та кнопки «Допомога» у кутку.</p>
+            <p>Додатковий текст для скролу...</p>
+            <p>Додатковий текст для скролу...</p>
+        </section>
+    </main>
+
+    <button class="help">Допомога</button>
+
+</body>
+</html>
